@@ -197,7 +197,6 @@ a {
 .chooseProfile {
     position: absolute;
     margin: 4em;
-    animation: float 4s ease-in-out infinite;
 
 }
 
@@ -234,20 +233,7 @@ a {
 
 }
 
-@keyframes float {
 
-    0%{
-        transform: translateY(0em);
-    }
-
-    50% {
-        transform: translateY(1em);
-    }
-
-    100%{
-        transform: translateY(0em);
-    }
-}
 
 @keyframes button-grow {
     0% {
@@ -268,11 +254,13 @@ a {
 
 /* personal */
 .scroll-carousel {
-    max-height: 400px;
+    max-height: 600px;
     border: 1px solid #ddd;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden; /* verticale scroll uitzetten */
+    gap: 4em;
+    margin: 2em;
 }
 
 .scroll-carousel::-webkit-scrollbar {
@@ -289,8 +277,8 @@ a {
 }
 
 .scroll-carousel .item {
-    min-width: 200px;
-    height: 400px;
+    min-width: 400px;
+    height: 600px;
     line-height: 350px;
     text-align: center;
     background-color: #ddd;
@@ -298,7 +286,7 @@ a {
 }
 
 .scroll-carousel img {
-    width: 200px;
-    height: 400px;
+    width: 400px;
+    height: 600px;
     line-height: 350px;
 }
