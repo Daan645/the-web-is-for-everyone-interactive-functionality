@@ -41,7 +41,7 @@ Je komt op de detail pagina door een item aan te klikken via de persoonlijke of 
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-Voor deze website is NodeJS gebruikt.
+### NodeJS
 
 Node.js is een platform waarmee je server-side JavaScript kunt draaien. Het stelt je in staat om JavaScript-code uit te voeren op de server, waardoor je dynamische en interactieve webapplicaties kunt bouwen.
 
@@ -49,6 +49,19 @@ Express is een minimalistisch webframework voor Node.js. Het biedt een set van k
 
 EJS (Embedded JavaScript) is een template-engine voor Node.js waarmee je dynamische HTML-pagina's kunt genereren. Het stelt je in staat om JavaScript-code in je HTML-bestanden in te sluiten, waardoor je gegevens vanuit je server kunt presenteren en hergebruiken. EJS maakt het gemakkelijk om herbruikbare componenten te maken en de logica van je applicatie te scheiden van de presentatielaag.
 
+### Progressive enhancement
+In dit project maak ik gebruik van progressive enhancement. Progressive enhancement gebruik je zodat je website bruikbaar is voor iederen. Je begint met het opmaken van de core functionaliteit. In mijn geval wou ik ervoor zorgen dat mensen een review kunnen bekijken door middel van de pop-up maar dat wordt lang niet door elke browser gebruikt. Je wilt er vanuit gaan dat de gebruiker misschien niet eens sommige html kan gebruiken of zelfs helemaal geen css of js.
+
+Hoe ben ik te werk gegaan?
+
+1. HTML
+Ik heb ten eerste de html toegevoegd waaroor het formulier voor elke gebruiker zichtbaar is. Ook heb ik de elementen op caniuse opgezocht, en ben ik er zeker van dat deze ook nog werkt als de elementen niet ondersteund worden.
+
+2. CSS
+Ik heb de styling toegevoegd om zo het formulier wat duidelijker en mooier te maken
+
+3.JS (enhancement)
+Ik heb met javascript gezorgd dat het formulier tevoorschijn komt wanneer je op een knop drukt in de form van een pop-up. Wel heb ik ervoor gezorgd dat de browser standaard de html laat zien wanneer er geen js ondersteund wordt zodat deze voor iedereen bruikbaar is
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 1. Fork deze repository
