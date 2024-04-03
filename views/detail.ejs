@@ -119,7 +119,7 @@
         // Controleer of de browser de style.display eigenschap ondersteunt
         if (typeof reviewPopUp.style.display === 'undefined') {
             // Voeg de CSS-klasse toe om het pop-upvenster weer te geven
-            reviewPopUp.classList.add('show-popup');
+            reviewPopUp.classList.remove('js');
         } else {
             // Gebruik de standaardmethode om het pop-upvenster weer te geven
             reviewPopUp.style.display = 'block';
@@ -129,7 +129,7 @@
     }
 
     //form
-    document.getElementById('review-form').addEventListener('submit', function(event) {
+    document.getElementById('review-form').addEventListener('submit', function (event) {
         event.preventDefault(); // Voorkom standaardgedrag van het formulier (pagina vernieuwen)
 
         // Verzend de recentiegegevens naar de server met een POST-verzoek
