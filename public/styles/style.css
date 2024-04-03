@@ -194,9 +194,15 @@ a {
 
     /*choosprofile style*/
 .choose-profile-content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto); /* Vaste hoogte van 200px voor alle rijen */
+    grid-gap: 5em; /* Optioneel: voeg ruimte toe tussen de kolommen */
+    padding: 0; /* Reset de padding */
+    margin: 2em;
+
+
 }
 
 .chooseProfile {
@@ -258,6 +264,15 @@ a {
 
 
 /* personal */
+.personal-page-wrapper h2{
+    margin: 2em;
+}
+
+.personal-page-wrapper h3{
+    margin: 1em 1em 1em 1.5em;
+
+}
+
 .scroll-carousel {
     max-height: 600px;
     border: 1px solid #ddd;
@@ -266,6 +281,7 @@ a {
     overflow-y: hidden; /* verticale scroll uitzetten */
     gap: 4em;
     margin: 2em;
+    text-align: center;
 }
 
 .scroll-carousel::-webkit-scrollbar {
@@ -295,3 +311,5 @@ a {
     height: 600px;
     line-height: 350px;
 }
+
+
