@@ -47,7 +47,7 @@
         <button id="toggle-review">Plaats recentie</button>
     </section>
 
-    <dialog id="review-pop-up">
+    <div id="review-pop-up">
         <form id="review-form" action="/submit-review" method="POST">
             <h2>Plaats een recentie</h2>
             <label for="review-name">Naam:</label>
@@ -56,12 +56,14 @@
             <textarea id="review-message" name="message" placeholder="Typ hier uw bericht" required></textarea>
             <button id="review-submit" type="submit">Plaats recentie</button>
         </form>
-    </dialog>
+    </div>
 
 </div>
 <%- include('./partials/footer') %>
 
 <script>
+    document.documentElement.classList.add('js');
+
     const detailsButton = document.querySelector('.details-button');
     const details = document.querySelector('.details');
     let detailsCheck = false;
@@ -105,7 +107,7 @@
     // review function op detail pagina
     const toggleReviewButton = document.getElementById('toggle-review');
     const reviewPopUp = document.getElementById('review-pop-up');
-    let reviewCheck = false;
+
 
     toggleReviewButton.addEventListener('click', function () {
         reviewActive();
@@ -113,9 +115,17 @@
     })
 
     function reviewActive() {
-        reviewCheck = true;
-        reviewPopUp.style.display = 'block';
-        console.log('yooo');
+
+        // Controleer of de browser de style.display eigenschap ondersteunt
+        if (typeof reviewPopUp.style.display === 'undefined') {
+            // Voeg de CSS-klasse toe om het pop-upvenster weer te geven
+            reviewPopUp.classList.add('show-popup');
+        } else {
+            // Gebruik de standaardmethode om het pop-upvenster weer te geven
+            reviewPopUp.style.display = 'block';
+        }
+
+
     }
 
     //form
