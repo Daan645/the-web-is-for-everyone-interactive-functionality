@@ -60,7 +60,7 @@ Ik heb ten eerste de html toegevoegd waaroor het formulier voor elke gebruiker z
 2. CSS
 Ik heb de styling toegevoegd om zo het formulier wat duidelijker en mooier te maken
 
-3.JS (enhancement)
+3. JS (enhancement)
 Ik heb met javascript gezorgd dat het formulier tevoorschijn komt wanneer je op een knop drukt in de form van een pop-up. Wel heb ik ervoor gezorgd dat de browser standaard de html laat zien wanneer er geen js ondersteund wordt zodat deze voor iedereen bruikbaar is
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
