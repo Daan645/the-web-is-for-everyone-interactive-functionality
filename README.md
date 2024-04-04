@@ -50,6 +50,10 @@ Express is een minimalistisch webframework voor Node.js. Het biedt een set van k
 EJS (Embedded JavaScript) is een template-engine voor Node.js waarmee je dynamische HTML-pagina's kunt genereren. Het stelt je in staat om JavaScript-code in je HTML-bestanden in te sluiten, waardoor je gegevens vanuit je server kunt presenteren en hergebruiken. EJS maakt het gemakkelijk om herbruikbare componenten te maken en de logica van je applicatie te scheiden van de presentatielaag.
 
 ### Progressive enhancement
+
+![image](https://github.com/Daan645/the-web-is-for-everyone-interactive-functionality/assets/54812898/6106df70-bb37-46cd-873e-5a3d4439bd3f)
+
+
 In dit project maak ik gebruik van progressive enhancement. Progressive enhancement gebruik je zodat je website bruikbaar is voor iederen. Je begint met het opmaken van de core functionaliteit. In mijn geval wou ik ervoor zorgen dat mensen een review kunnen bekijken door middel van de pop-up maar dat wordt lang niet door elke browser gebruikt. Je wilt er vanuit gaan dat de gebruiker misschien niet eens sommige html kan gebruiken of zelfs helemaal geen css of js.
 
 Hoe ben ik te werk gegaan?
